@@ -2,9 +2,9 @@
 
 Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 
-Framework: Nuxt 3
-Design: Vuetify 3
-Store: Pinia
+Framework: Nuxt 3  
+Design: Vuetify 3  
+Store: Pinia  
 
 ## Setup
 
