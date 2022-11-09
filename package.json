@@ -1,0 +1,33 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint --ext .js,.ts,.vue --ignore-path .eslintignore . --fix"
+  },
+  "devDependencies": {
+    "@nuxt/test-utils-edge": "^3.0.0-rc.14-27796957.b60f136",
+    "@typescript-eslint/eslint-plugin": "^5.42.1",
+    "@typescript-eslint/parser": "^5.42.1",
+    "@vue/eslint-config-standard": "^8.0.1",
+    "eslint": "^8.27.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-nuxt": "^4.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.7.0",
+    "nuxt": "3.0.0-rc.13",
+    "vitest": "^0.25.1"
+  },
+  "dependencies": {
+    "@mdi/font": "^7.0.96",
+    "@pinia/nuxt": "^0.4.3",
+    "pinia": "^2.0.23",
+    "sass": "^1.56.1",
+    "typescript": "^4.8.4",
+    "vue-eslint-parser": "^9.1.0",
+    "vuetify": "^3.0.0"
+  }
+}
