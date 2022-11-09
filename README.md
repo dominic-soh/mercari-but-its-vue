@@ -1,10 +1,8 @@
-# Nuxt 3 Minimal Starter
+# Mercari website, but it's vue so it's better
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
-
-Framework: Nuxt 3  
-Design: Vuetify 3  
-Store: Pinia  
+Framework: [Nuxt 3](https://v3.nuxtjs.org)  
+Design: [Vuetify 3](https://next.vuetifyjs.com/en/)  
+Store: [Pinia](https://pinia.vuejs.org/)  
 
 ## Setup
 
