@@ -6,6 +6,8 @@ Store: [Pinia](https://pinia.vuejs.org/)
 
 ## Setup
 
+Node version: Latest LTS (currently v18.12.1 as of 9 Nov 2022)  
+
 Make sure to install the dependencies:
 
 ```bash
