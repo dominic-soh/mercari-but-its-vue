@@ -4,6 +4,7 @@ export interface Item {
     name: string
     category: string
     image: string
+    id: string
 }
 
 export const useItemsStore = defineStore('ItemStore', {
