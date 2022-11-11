@@ -1,16 +1,18 @@
 import { defineStore } from 'pinia'
 
-interface Item {
+export interface Item {
     name: string
     category: string
     image: string
 }
 
-export const useItemsStore = defineStore('ItemStore', () => {
-    const items = ref<Item[]>([])
-    const getItems = computed(() => items)
-    async function itemsApi() {
-        items.value = await $fetch('/api/items')
+export const useItemsStore = defineStore('ItemStore', {
+    state: () => ({
+        items: [] as Item[]
+    }),
+    actions: {
+        async itemsApi() {
+            this.items = useFetch('/api/items').data.value?.items ?? []
+        }
     }
-    return { getItems, itemsApi }
 })

@@ -1,74 +1,76 @@
 <template>
   <v-layout>
-    <v-app-bar color="grey-lighten-1">
-      <template #image>
-        <img
-          src="~/assets/img/logo.svg"
-          width="182"
-          style="padding: 0 2.25rem 0 2.25rem"
-        >
-      </template>
-      <v-app-bar-title>
-        <v-text-field
-          density="compact"
-          append-inner-icon="mdi-magnify"
-          placeholder="search"
-          bg-color="white"
-          variant="outlined"
-          hide-details
-          style="max-width: 50rem; margin-left: 182px"
-        />
-      </v-app-bar-title>
-
-      <v-btn>Notifications</v-btn>
-      <v-btn>Login</v-btn>
-      <v-btn>Signup</v-btn>
-      <v-btn
-        variant="flat"
-        color="error"
-      >
-        Sell
-      </v-btn>
-    </v-app-bar>
-    <v-main>
-      <slot />
-    </v-main>
-    <v-footer
-      app
-      class="bg-grey-darken-1"
-    >
-      <v-row
-        justify="start"
-        no-gutters
-      >
-        <div
-          v-for="stuff in bottomStuff"
-          :key="stuff"
-          style="color: white; font-weight: 600;"
-          class="mx-8"
-        >
-          {{ stuff.title }}
-          <v-col
-            v-for="link in stuff.subtitles"
-            :key="link"
-            style="padding: 0.5rem 0 0.5rem 0"
+    <v-app>
+      <v-app-bar color="grey-lighten-1">
+        <template #image>
+          <img
+            src="~/assets/img/logo.svg"
+            width="182"
+            style="padding: 0 2.25rem 0 2.25rem"
           >
-            <NuxtLink
-              to="https://cataas.com/cat"
-              class="custom-link"
-            >
-              {{ link }}
-            </NuxtLink>
-          </v-col>
-        </div>
-        <v-col
-          class="text-center mt-4"
-          cols="12"
+        </template>
+        <v-app-bar-title>
+          <v-text-field
+            density="compact"
+            append-inner-icon="mdi-magnify"
+            placeholder="search"
+            bg-color="white"
+            variant="outlined"
+            hide-details
+            style="max-width: 50rem; margin-left: 182px"
+          />
+        </v-app-bar-title>
+
+        <v-btn>Notifications</v-btn>
+        <v-btn>Login</v-btn>
+        <v-btn>Signup</v-btn>
+        <v-btn
+          variant="flat"
+          color="error"
         >
-          {{ new Date().getFullYear() }} — <strong>FakeMercari</strong>
-        </v-col>
-      </v-row>
-    </v-footer>
+          Sell
+        </v-btn>
+      </v-app-bar>
+      <v-main>
+        <slot />
+      </v-main>
+      <v-footer
+        app
+        class="bg-grey-darken-1"
+      >
+        <v-row
+          justify="start"
+          no-gutters
+        >
+          <div
+            v-for="(stuff, index) in bottomStuff"
+            :key="index"
+            style="color: white; font-weight: 600;"
+            class="mx-8"
+          >
+            {{ stuff.title }}
+            <v-col
+              v-for="link in stuff.subtitles"
+              :key="link"
+              style="padding: 0.5rem 0 0.5rem 0"
+            >
+              <NuxtLink
+                to="https://cataas.com/cat"
+                class="custom-link"
+              >
+                {{ link }}
+              </NuxtLink>
+            </v-col>
+          </div>
+          <v-col
+            class="text-center mt-4"
+            cols="12"
+          >
+            {{ new Date().getFullYear() }} — <strong>FakeMercari</strong>
+          </v-col>
+        </v-row>
+      </v-footer>
+    </v-app>
   </v-layout>
 </template>
 
