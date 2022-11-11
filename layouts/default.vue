@@ -1,25 +1,34 @@
+<!-- todo: layout for small screens -->
 <template>
   <v-layout>
     <v-app>
-      <v-app-bar color="grey-lighten-1">
-        <template #image>
-          <img
-            src="~/assets/img/logo.svg"
-            width="182"
-            style="padding: 0 2.25rem 0 2.25rem"
+      <v-app-bar
+        color="grey-lighten-5"
+        flat
+      >
+        <v-row>
+          <nuxt-link
+            to="/"
+            style="padding: 0.469rem 2.25rem 0 2.25rem"
           >
-        </template>
-        <v-app-bar-title>
-          <v-text-field
-            density="compact"
-            append-inner-icon="mdi-magnify"
-            placeholder="search"
-            bg-color="white"
-            variant="outlined"
-            hide-details
-            style="max-width: 50rem; margin-left: 182px"
-          />
-        </v-app-bar-title>
+            <img
+              ref="mercari logo"
+              src="~/assets/img/logo.svg"
+              width="110"
+            >
+          </nuxt-link>
+          <v-app-bar-title>
+            <v-text-field
+              density="compact"
+              append-inner-icon="mdi-magnify"
+              placeholder="search"
+              bg-color="white"
+              variant="outlined"
+              hide-details
+              style="width: 70%"
+            />
+          </v-app-bar-title>
+        </v-row>
 
         <v-btn>Notifications</v-btn>
         <v-btn>Login</v-btn>
@@ -122,7 +131,7 @@ export default defineComponent({
 })
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
 .custom-link {
     color: inherit;
     font-weight: 400;
