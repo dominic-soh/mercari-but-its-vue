@@ -13,17 +13,22 @@
   </v-row>
   <v-container>
     <v-row>
-      <v-col
-        v-for="item in store.items"
-        :key="item.id"
-      >
-        <listing-item
-          :id="item.id"
-          :name="item.name"
-          :category="item.category"
-          :image="item.image"
-        />
-      </v-col>
+      <client-only>
+        <div v-if="store.items.length === 0">
+          Error 500: Internal Server Error
+        </div>
+        <v-col
+          v-for="item in store.items"
+          :key="item.id"
+        >
+          <listing-item
+            :id="item.id"
+            :name="item.name"
+            :category="item.category"
+            :image="item.image"
+          />
+        </v-col>
+      </client-only>
     </v-row>
   </v-container>
 </template>
