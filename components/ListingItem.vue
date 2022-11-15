@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <nuxt-link
-      :to="id"
+      :to="`item/${id}`"
       class="custom-link"
     >
       <v-card>

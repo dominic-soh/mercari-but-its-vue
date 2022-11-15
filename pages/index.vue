@@ -37,7 +37,7 @@
 import { useItemsStore } from '@/store/ItemStore'
 import ListingItem from '~/components/ListingItem.vue'
 const store = useItemsStore()
-store.itemsApi()
+await store.itemsApi()
 </script>
 
 <style scoped lang="scss">
