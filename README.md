@@ -1,8 +1,8 @@
 # Mercari website, but it's vue so it's better
 
-Framework: [Nuxt 3](https://v3.nuxtjs.org)  
-Design: [Vuetify 3](https://next.vuetifyjs.com/en/)  
-Store: [Pinia](https://pinia.vuejs.org/)  
+| Framework  | Design  | Store  |
+|:----------:|:----------:|:----------:|
+| [Nuxt 3](https://v3.nuxtjs.org) <picture><img src="https://github.com/devicons/devicon/blob/master/icons/nuxtjs/nuxtjs-original.svg" ref="nuxtjs" height="20" /></picture>    | [Vuetify 3](https://next.vuetifyjs.com/en/) <picture><img src="https://github.com/devicons/devicon/blob/master/icons/vuetify/vuetify-original.svg" ref="nuxtjs" height="20" /></picture>    | [Pinia](https://pinia.vuejs.org/) <picture><img src="https://pinia.vuejs.org/logo.svg" ref="nuxtjs" height="20" /></picture>    |
 
 ## Setup
 
